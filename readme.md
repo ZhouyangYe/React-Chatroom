@@ -2,8 +2,9 @@ This is a simple chat room based on ReactJS, Redux and Socket.io.
 
 To run the app:
  
-First of all, clone this repository to your computer or simply download it.
-NodeJS must be installed.
+First of all, clone this repository to your computer or simply download it. NodeJS must be installed.
+
+Go into React-Chatroom(root folder): `cd React-Chatroom`
 
 Then run `npm install` on the terminal in the root folder to install all the dependencies.
 
