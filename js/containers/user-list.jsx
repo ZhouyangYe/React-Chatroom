@@ -11,9 +11,9 @@ class UserList extends Component{
             return (
                 <li key={user.id} className="box">
                     <h3>{user.username}</h3>
-                    <textarea defaultValue={"Hello World!!!"} ref="myMessage"></textarea>
+                    <textarea defaultValue={"Hello World!!!"} ref={user.id}></textarea>
                     <button onClick={()=>{
-                        this.props.sendMessage(user.username,this.refs.myMessage.value);
+                        this.props.sendMessage(user.username,this.refs[user.id].value);
                         socket.store.dispatch({type:'server/update', data:{
                             username: user.username,
                             content: this.refs.myMessage.value
